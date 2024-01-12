@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MercNado</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <!-- navbar start -->
+        <div class="navbar">
+            <div class="logo">
+                <a href="/html/index.html"><img src="/Images/logo1.png" width="130px" alt="Logo"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="/html/index.html">Home</a></li>
+                    <li><a href="/html/Products.html">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="/html/Account.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="/images/cart.png" class="cart" width="20px" height="20px" alt="Cart">
+            <img src="/images/menu.png" class="menu-icon" onclick="menutoggle()" alt="Menu Icon">
+        </div>
+        <!-- navbar start -->
+        <div class="row">
+            <div class="col-2">
+                <h1>Give Your Wardrobe<br>A New Look!</h1>
+                <p>Style is a way to say who you are without having to speak....</p>
+                <a href="#" class="btn">Explore Now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="/Images/La Vie Boheme By Jean-Baptiste Mondino - V Magazine.jpeg" alt="Fashion Image">
+            </div>
+        </div>
+    </div>
+    <!-- footer start -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App For Android and iOS</p>
+                    <div class="app-logo">
+                        <img src="/Images/play-store.png" alt="Play Store Logo">
+                        <img src="/Images/app-store.png" alt="App Store Logo">
+                    </div>
+                </div>
+
+                <div class="footer-col-2">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Facebook</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2023 - mercNado</p>
+        </div>
+    </div>
+    <!-- footer end -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
